@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Report1</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-04-29 12:45:52</p>
+                <p class='attribute'><strong>Duration: </strong>113.66 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 9, Pass: 7, Error: 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>SiteHotelArtelier.menu_test.TestArtelierMenu</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test1_menu</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 1 -- Duration: 16.00 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>SiteHotelArtelier.rezervare_tests.TestArtelierRezervare</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test2_rezerva_room_with_balcony</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test3_rezervarea_mea_is_dispayed</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test6_cod_promotional_gol</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="header"]/div/nav/a[1]"}
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006FDCE3+50899]
+	(No symbol) [0x0068E111]
+	(No symbol) [0x00595588]
+	(No symbol) [0x005C08F9]
+	(No symbol) [0x005C0AFB]
+	(No symbol) [0x005EF902]
+	(No symbol) [0x005DB944]
+	(No symbol) [0x005EE01C]
+	(No symbol) [0x005DB6F6]
+	(No symbol) [0x005B7708]
+	(No symbol) [0x005B886D]
+	GetHandleVerifier [0x00963EAE+2566302]
+	GetHandleVerifier [0x009992B1+2784417]
+	GetHandleVerifier [0x0099327C+2759788]
+	GetHandleVerifier [0x00795740+672048]
+	(No symbol) [0x00698872]
+	(No symbol) [0x006941C8]
+	(No symbol) [0x006942AB]
+	(No symbol) [0x006871B7]
+	BaseThreadInitThunk [0x76747D49+25]
+	RtlInitializeExceptionChain [0x77D9B74B+107]
+	RtlClearBits [0x77D9B6CF+191]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\andre\PycharmProjects\ProiectFinal_QAAndreeaTarata\SiteHotelArtelier\rezervare_tests.py", line 36, in test6_cod_promotional_gol
+    self.driver.find_element(*locators.REZERVA_ACUM).click()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andre\PycharmProjects\ProiectFinal_QAAndreeaTarata\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 831, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andre\PycharmProjects\ProiectFinal_QAAndreeaTarata\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\andre\PycharmProjects\ProiectFinal_QAAndreeaTarata\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="header"]/div/nav/a[1]"}
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006FDCE3+50899]
+	(No symbol) [0x0068E111]
+	(No symbol) [0x00595588]
+	(No symbol) [0x005C08F9]
+	(No symbol) [0x005C0AFB]
+	(No symbol) [0x005EF902]
+	(No symbol) [0x005DB944]
+	(No symbol) [0x005EE01C]
+	(No symbol) [0x005DB6F6]
+	(No symbol) [0x005B7708]
+	(No symbol) [0x005B886D]
+	GetHandleVerifier [0x00963EAE+2566302]
+	GetHandleVerifier [0x009992B1+2784417]
+	GetHandleVerifier [0x0099327C+2759788]
+	GetHandleVerifier [0x00795740+672048]
+	(No symbol) [0x00698872]
+	(No symbol) [0x006941C8]
+	(No symbol) [0x006942AB]
+	(No symbol) [0x006871B7]
+	BaseThreadInitThunk [0x76747D49+25]
+	RtlInitializeExceptionChain [0x77D9B74B+107]
+	RtlClearBits [0x77D9B6CF+191]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test7_autentificare_falsa</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test8_termeni_conditii</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: unknown error: failed to change window state to 'maximized', current state is 'minimized'
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006FDCE3+50899]
+	(No symbol) [0x0068E111]
+	(No symbol) [0x00595588]
+	(No symbol) [0x0057FBB0]
+	(No symbol) [0x0057EE4B]
+	(No symbol) [0x0057E23E]
+	(No symbol) [0x005FC969]
+	(No symbol) [0x005DB8FC]
+	(No symbol) [0x005EE01C]
+	(No symbol) [0x005DB6F6]
+	(No symbol) [0x005B7708]
+	(No symbol) [0x005B886D]
+	GetHandleVerifier [0x00963EAE+2566302]
+	GetHandleVerifier [0x009992B1+2784417]
+	GetHandleVerifier [0x0099327C+2759788]
+	GetHandleVerifier [0x00795740+672048]
+	(No symbol) [0x00698872]
+	(No symbol) [0x006941C8]
+	(No symbol) [0x006942AB]
+	(No symbol) [0x006871B7]
+	BaseThreadInitThunk [0x76747D49+25]
+	RtlInitializeExceptionChain [0x77D9B74B+107]
+	RtlClearBits [0x77D9B6CF+191]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\andre\PycharmProjects\ProiectFinal_QAAndreeaTarata\SiteHotelArtelier\rezervare_tests.py", line 17, in setUp
+    self.driver.maximize_window()
+  File "C:\Users\andre\PycharmProjects\ProiectFinal_QAAndreeaTarata\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 592, in maximize_window
+    self.execute(command, None)
+  File "C:\Users\andre\PycharmProjects\ProiectFinal_QAAndreeaTarata\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\andre\PycharmProjects\ProiectFinal_QAAndreeaTarata\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: failed to change window state to 'maximized', current state is 'minimized'
+  (Session info: chrome=112.0.5615.138)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x006FDCE3+50899]
+	(No symbol) [0x0068E111]
+	(No symbol) [0x00595588]
+	(No symbol) [0x0057FBB0]
+	(No symbol) [0x0057EE4B]
+	(No symbol) [0x0057E23E]
+	(No symbol) [0x005FC969]
+	(No symbol) [0x005DB8FC]
+	(No symbol) [0x005EE01C]
+	(No symbol) [0x005DB6F6]
+	(No symbol) [0x005B7708]
+	(No symbol) [0x005B886D]
+	GetHandleVerifier [0x00963EAE+2566302]
+	GetHandleVerifier [0x009992B1+2784417]
+	GetHandleVerifier [0x0099327C+2759788]
+	GetHandleVerifier [0x00795740+672048]
+	(No symbol) [0x00698872]
+	(No symbol) [0x006941C8]
+	(No symbol) [0x006942AB]
+	(No symbol) [0x006871B7]
+	BaseThreadInitThunk [0x76747D49+25]
+	RtlInitializeExceptionChain [0x77D9B74B+107]
+	RtlClearBits [0x77D9B6CF+191]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test9_iteratie_selectare_limba</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 6, Pass: 4, Error: 2 -- Duration: 69.52 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>SiteHotelArtelier.review_tests.TestArtelierReview</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test4_nota_minima_review_alert</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test5_nota_minima_review_sub9</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>The review rating is above 9.
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 2 -- Duration: 28.14 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
